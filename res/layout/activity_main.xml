@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custome="http://schemas.android.com/apk/res/com.hengtiansoft.cloudcontact"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ccc"
+    android:orientation="vertical" >
+
+    <com.widget.TaskButton
+        android:id="@+id/TaskButton_Upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        custome:btn_bg="@drawable/upload_unselected" 
+        custome:btn_selected_bg="@drawable/upload_selected"
+        custome:btn_name="上传"
+        >
+    </com.widget.TaskButton>
+
+</LinearLayout>

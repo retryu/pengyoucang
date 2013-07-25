@@ -1,0 +1,19 @@
+package com.activity.friend;
+
+import android.os.Bundle;
+
+import com.activity.CommonActivity;
+import com.hengtiansoft.cloudcontact.R;
+
+/**
+ * @author retryu E-mail:ruanchenyugood@gmail.com
+ * @version create Time：2013-6-28 下午02:42:14 file declare:
+ */
+public class InfoUpdateActivity extends CommonActivity {
+	@Override
+	protected void onCreate(Bundle arg0) {
+		// TODO Auto-generated method stub
+		super.onCreate(arg0);
+		setContentView(R.layout.activity_update_info);
+	}
+}

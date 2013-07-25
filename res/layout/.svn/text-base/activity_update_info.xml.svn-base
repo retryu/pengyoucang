@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#2e96df" >
+
+    <Button
+        android:id="@+id/Btn_Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:background="#11639f"
+        android:text="Back"
+        android:textColor="#8ad0ff" />
+
+    <ListView
+        android:id="@+id/Lv_Update"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/Btn_Back"
+        android:layout_marginBottom="40dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip" >
+    </ListView>
+
+    <Button
+        android:id="@+id/Btn_Update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Lv_Update"
+        android:layout_centerHorizontal="true"
+        android:text="Update" />
+
+</RelativeLayout>

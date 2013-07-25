@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/CloudContact/!svn/ver/111/trunk/Client/Android/CloudContact2/src/com/activity/friend
+END
+FriendInfoActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/CloudContact/!svn/ver/129/trunk/Client/Android/CloudContact2/src/com/activity/friend/FriendInfoActivity.java
+END
+SearchResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/CloudContact/!svn/ver/129/trunk/Client/Android/CloudContact2/src/com/activity/friend/SearchResult.java
+END
+FriendAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/CloudContact/!svn/ver/129/trunk/Client/Android/CloudContact2/src/com/activity/friend/FriendAdapter.java
+END
+SearchFriendActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/CloudContact/!svn/ver/129/trunk/Client/Android/CloudContact2/src/com/activity/friend/SearchFriendActivity.java
+END
+FriendFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/CloudContact/!svn/ver/129/trunk/Client/Android/CloudContact2/src/com/activity/friend/FriendFragment.java
+END
+InfoUpdateActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/CloudContact/!svn/ver/129/trunk/Client/Android/CloudContact2/src/com/activity/friend/InfoUpdateActivity.java
+END
+FriendSearchAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/CloudContact/!svn/ver/129/trunk/Client/Android/CloudContact2/src/com/activity/friend/FriendSearchAdapter.java
+END

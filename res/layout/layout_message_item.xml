@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="70dip"
+    android:background="#97cbf0"
+    android:minHeight="60dip"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/Layout_Opr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" >
+
+        <TextView
+            android:id="@+id/Tv_Added"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dip"
+            android:text="已添加"
+            android:textColor="#92a8b6" />
+
+        <Button
+            android:id="@+id/Btn_Msg_Yes"
+            android:layout_width="60dip"
+            android:layout_height="30dip"
+            android:layout_marginRight="15dip"
+            android:background="#2e96df"
+            android:text="接受"
+            android:textColor="#ffffff" />
+
+        <!--
+              <Button
+            android:id="@+id/Btn_Msg_No"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_toRightOf="@id/Btn_Msg_Yes"
+            android:background="#2e96df"
+            android:text="no"
+            android:textColor="#ffffff" />
+        -->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/Layout_Opr" >
+
+        <TextView
+            android:id="@+id/Tv_Msg"
+            android:layout_width="wrap_content"
+            android:layout_height="20dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:maxLength="10"
+            android:text="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+            android:textColor="#4c87af"
+              />
+
+        <TextView
+            android:id="@+id/Tv_Mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/Tv_Msg"
+              android:maxLength="8"
+            android:textColor="#4d87af" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/Tv_Number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="111111111111111111"
+        android:textColor="#6d6b6c" />
+
+</RelativeLayout>

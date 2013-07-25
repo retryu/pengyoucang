@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#2e96df"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/Btn_Back"
+        android:layout_width="80dip"
+        android:layout_height="40dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:background="#11639f"
+        android:text="@string/back"
+        android:textColor="#8ad0ff" />
+
+    <RelativeLayout
+        android:id="@+id/Layout_Head_Bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Btn_Back"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip" >
+
+        <ImageView
+            android:id="@+id/Img_Head"
+            android:layout_width="50dip"
+            android:layout_height="35dip"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/commendedfriend" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Img_Head"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip"
+            android:text="@string/Recommended_Friends"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/ListView_Message"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/Layout_Head_Bar"
+        android:layout_marginTop="10dip"
+        android:background="#97cbf0"
+        android:divider="#bcdff5"
+        android:dividerHeight="1dip" >
+    </ListView>
+    
+    
+       <TextView
+        android:id="@+id/Tv_Alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="#4d87ad"
+        android:text="暂无好友更新" />
+    
+    
+
+</RelativeLayout>

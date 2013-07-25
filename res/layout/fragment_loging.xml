@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custome="http://schemas.android.com/apk/res/com.hengtiansoft.cloudcontact"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#2e96df"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/Layout_HeadImg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip" >
+
+        <ImageView
+            android:id="@+id/Img_Profile"
+            android:layout_width="104dip"
+            android:layout_height="89dip"
+            android:layout_marginTop="20dip"
+            android:layout_below="@id/Btn_Back"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/login" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Layout_Email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Layout_HeadImg"
+        android:layout_marginTop="20dip" >
+
+        <com.widget.HeadEditText
+            android:id="@+id/Et_Email"
+            custome:name="邮箱"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_marginLeft="30dip"
+            android:layout_marginRight="30dip"
+            custome:context_color="@color/register_context_color"
+            custome:tag_image="@drawable/login_email" >
+        </com.widget.HeadEditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Layout_PW"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Layout_Email" >
+
+        <com.widget.HeadEditText
+            android:id="@+id/Et_PassWord"
+            custome:name="密码"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_marginLeft="30dip"
+            android:layout_marginRight="30dip"
+            android:layout_marginTop="-1dip"
+            custome:context_color="@color/register_context_color"
+            custome:password="true"
+            custome:tag_image="@drawable/login_password" >
+        </com.widget.HeadEditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Layout_Login_Opration"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Layout_PW"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:layout_marginTop="30dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/Btn_Logging"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:background="@drawable/btn_login_bg"
+            android:text="@string/loging"
+            android:textColor="#fefffd" />
+
+        <Button
+            android:id="@+id/Btn_Register"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_below="@id/Btn_Logging"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/btn_register_bg"
+            android:height="50dip"
+            android:text="@string/register"
+            android:textColor="#7dd4ff" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Layout_Login_Opration"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:text="注销" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/Img_Logo"
+        android:layout_width="105dip"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dip"
+        android:background="@drawable/logo" />
+
+</RelativeLayout>

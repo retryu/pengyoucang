@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MyEdit">
+        <attr name="name" format="string" />
+    </declare-styleable>
+    <declare-styleable name="MyEdit">
+        <attr name="tag_image" format="integer" />
+    </declare-styleable>
+       <declare-styleable name="MyEdit">
+        <attr name="context_color" format="color" />
+    </declare-styleable>
+    
+           <declare-styleable name="MyEdit">
+        <attr name="isNumber" format="boolean" />
+    </declare-styleable>
+    
+    <declare-styleable name="MyButton">
+        <attr name="btn_bg" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="MyButton">
+        <attr name="btn_selected_bg" format="integer" />
+    </declare-styleable>
+    
+    
+    <declare-styleable name="MyButton">
+        <attr name="btn_name" format="string" />
+    </declare-styleable>
+    
+    
+    <declare-styleable name="MyEdit">
+        <attr name="password" format="boolean"></attr>
+    </declare-styleable>
+    <declare-styleable name="MyItem">
+        <attr name="item_name" format="string" />
+    </declare-styleable>
+
+</resources>

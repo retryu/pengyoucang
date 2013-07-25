@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <!-- 33b5e5 -->
+    <color name="alert">#CC0000</color>
+    <color name="confirm">#FF8800</color>
+    <color name="info">#669900</color>
+    <color name="number_key_press_bg">#33b5e5</color>
+	<color name="light_blue">#cce7f8</color>
+	<color name="edit_bg">#97cbf0</color>
+	<color name="edit_text_color">#5f4f5d</color>
+	<color name="edit_text_head_color">#4c88ad</color>
+	<color name="contact_item_unselect">#2e96df</color>
+	<color name="contact_item_selected">#7ed4ff</color>
+	<color name="contact_item_text_color">#4f86ad</color>
+	<color  name="menu_text_color">#e2f4ff</color>
+	 <color  name="register_context_color">#4c85b0</color>
+	<color  name="white">#ffffff</color>
+	<color name="btn_blue">#97cbef</color>
+</resources>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custome="http://schemas.android.com/apk/res/com.hengtiansoft.cloudcontact"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#2e96df"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/Btn_Back"
+        android:layout_width="80dip"
+        android:layout_height="40dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:background="#11639f"
+        android:text="@string/back"
+        android:textColor="#8ad0ff" />
+
+    <Button
+        android:id="@+id/Btn_FeedBack"
+        android:layout_width="80dip"
+        android:layout_height="40dip"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:background="#11639f"
+        android:text="@string/feed_back"
+        android:textColor="#8ad0ff" />
+
+    <ImageView
+        android:id="@+id/Img_Profile"
+        android:layout_width="58dip"
+        android:layout_height="77dip"
+        android:layout_below="@id/Btn_Back"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/Tv_Head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Img_Profile"
+        android:layout_centerHorizontal="true"
+        android:text="个人信息"
+        android:textColor="#e2f4fe" />
+
+    <TextView
+        android:id="@+id/Tv_Warm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Tv_Head"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:layout_marginTop="30dip"
+        android:text="@string/profile_warm"
+        android:textColor="#ccc" />
+
+    <com.widget.HeadEditText
+        android:id="@+id/He_Name"
+        custome:name="@string/nicheng"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_below="@id/Tv_Warm"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:layout_marginTop="5dip"
+        >
+    </com.widget.HeadEditText>
+
+    <com.widget.HeadEditText
+        android:id="@+id/He_Mobile"
+        custome:name="@string/mobile"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_below="@id/He_Name"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:layout_marginTop="-1dip"
+        custome:isNumber="true" >
+    </com.widget.HeadEditText>
+
+    <com.widget.HeadEditText
+        android:id="@+id/He_Home"
+        custome:name="@string/home"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_below="@id/He_Mobile"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:layout_marginTop="-1dip"
+        custome:isNumber="true" >
+    </com.widget.HeadEditText>
+
+    <Button
+        android:id="@+id/Btn_Update"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_below="@id/He_Home"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/btn_login_bg"
+        android:text="@string/update"
+        android:textColor="#f2f9ff" />
+
+    <Button
+        android:id="@+id/Btn_Logout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_below="@id/Btn_Update"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/btn_register_bg"
+        android:text="@string/logout"
+        android:textColor="#f2f9ff" />
+
+</RelativeLayout>

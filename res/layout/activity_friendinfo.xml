@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custome="http://schemas.android.com/apk/res/com.hengtiansoft.cloudcontact"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#2e96df" >
+
+    <Button
+        android:id="@+id/Btn_Back"
+        android:layout_width="80dip"
+        android:layout_height="40dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:background="#11639f"
+        android:text="@string/back"
+        android:textColor="#8ad0ff" />
+
+    <RelativeLayout
+        android:id="@+id/Head_Bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Btn_Back" >
+
+        <RelativeLayout
+            android:id="@+id/Ly_Friend"
+            android:layout_width="70dip"
+            android:layout_height="55dip"
+            android:layout_centerHorizontal="true" >
+
+            <ImageView
+                android:id="@+id/Img_Friend"
+                android:layout_width="55dip"
+                android:layout_height="48dip"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/friendslist_logo" />
+
+            <com.widget.NumberNotify
+                android:id="@+id/NN_Msg"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true" >
+            </com.widget.NumberNotify>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/Tv_Friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Ly_Friend"
+            android:layout_centerHorizontal="true"
+            android:text="@string/frined"
+            android:textColor="@color/menu_text_color" />
+    </RelativeLayout>
+
+    <com.widget.NotifyItem
+        android:id="@+id/Item_Info"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_below="@id/Head_Bar"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:layout_marginTop="20dip"
+        custome:item_name="@string/infomation_change" >
+    </com.widget.NotifyItem>
+
+    <com.widget.NotifyItem
+        android:id="@+id/Item_Add_Contact"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_below="@id/Item_Info"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:layout_marginTop="30dip"
+        custome:item_name="@string/add_contact" >
+    </com.widget.NotifyItem>
+
+    <com.widget.NotifyItem
+        android:id="@+id/Item_Recommend"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_below="@id/Item_Add_Contact"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:layout_marginTop="-1px"
+        custome:item_name="@string/Recommended_Friends" >
+    </com.widget.NotifyItem>
+
+    <com.widget.NotifyItem
+        android:id="@+id/Item_About"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_below="@id/Item_Recommend"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:layout_marginTop="-1px"
+        custome:item_name="@string/about_us" >
+    </com.widget.NotifyItem>
+
+</RelativeLayout>

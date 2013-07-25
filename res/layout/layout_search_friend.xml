@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#2e96df"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/Btn_Back"
+        android:layout_width="80dip"
+        android:layout_height="40dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:background="#11639f"
+        android:text="@string/back"
+        android:textColor="#8ad0ff" />
+
+    <RelativeLayout
+        android:id="@+id/Layout_Head_Bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Btn_Back" >
+
+        <ImageView
+            android:id="@+id/Img_Add_Contact"
+            android:layout_width="40dip"
+            android:layout_height="46dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/addcontact"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Img_Add_Contact"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip"
+            android:text="@string/add_contact"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <com.widget.SearchView
+        android:id="@+id/SearchView_My"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_below="@id/Layout_Head_Bar"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:layout_marginTop="20dip" >
+    </com.widget.SearchView>
+
+    <com.widget.ListViewSearch
+        android:id="@+id/ListView_Friends"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/SearchView_My"
+        android:layout_marginTop="20dip"
+        android:background="#97cbf0"
+        android:divider="#bcdff5"
+        android:dividerHeight="1dip" >
+    </com.widget.ListViewSearch>
+
+</RelativeLayout>
