@@ -1,6 +1,7 @@
 package com.widget;
 
 import java.util.ArrayList;
+import java.util.IllegalFormatCodePointException;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -72,6 +73,13 @@ public class ListViewSearch extends ListView {
 			public void run() {
 				super.run();
 				CommonResponse response = FriendApi.getFriend(u);
+				if (response == null) {
+					Message msg = new Message();
+					msg.what = MSG_ALER;
+					msg.obj = getResources().getString(R.string.error);
+					uiHandler.sendMessage(msg);
+					return ;
+				}
 				if (response.getStateCode() == HttpUtil.CODE_NULL) {
 					Message msg = new Message();
 					msg.what = MSG_NOT_FOUND;

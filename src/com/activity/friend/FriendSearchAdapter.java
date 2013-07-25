@@ -2,6 +2,7 @@ package com.activity.friend;
 
 import java.util.List;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -17,6 +18,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.activity.CommonActivity;
 import com.activity.friend.InfoUpdateActivity.UiHander;
 import com.db.model.Friend;
 import com.hengtiansoft.cloudcontact.R;
@@ -35,8 +37,10 @@ public class FriendSearchAdapter extends BaseAdapter {
 	private EditText editText;
 	AlertDialog alertDialog;
 	private UiHandler uiHander;
+	private CommonActivity commonActivity;
 
-	public FriendSearchAdapter(Context c) {
+	public FriendSearchAdapter(CommonActivity c) {
+		commonActivity = c;
 		context = c;
 		layoutInflater = (LayoutInflater) c
 				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -83,9 +87,10 @@ public class FriendSearchAdapter extends BaseAdapter {
 		final TextView tvSend = (TextView) view.findViewById(R.id.Tv_Send);
 		tvSend.setVisibility(View.INVISIBLE);
 		if (result.getType() == 0) {
-			tvName.setText("未找到");
+			tvName.setText(context.getResources().getString(
+					R.string.cant_not_found));
 			btnAdd.setVisibility(View.INVISIBLE);
-		} else {  
+		} else {
 			final Friend friend = result.getFriend();
 			if (friend.getName() != null) {
 				if (result.getType() == 1) {
@@ -109,7 +114,7 @@ public class FriendSearchAdapter extends BaseAdapter {
 
 					editText = new EditText(context);
 
-					alertDialog = new AlertDialog.Builder(context)
+					alertDialog = new AlertDialog.Builder(commonActivity)
 							.setTitle("请输入请求内容")
 							.setIcon(android.R.drawable.ic_dialog_info)
 							.setView(editText)

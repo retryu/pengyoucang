@@ -164,6 +164,13 @@ public class LoginFragment extends Fragment implements OnClickListener {
 	}
 
 	public boolean check(User user) {
+		if (user.getEmail().equals("")) {
+			Toast.makeText(loginActivity,
+					loginActivity.getString(R.string.alert_account_null),
+					Toast.LENGTH_SHORT).show();
+			return false;
+		}
+
 		if (user.getEmail().equals("") && user.getPassword().equals("")) {
 			Toast.makeText(loginActivity,
 					loginActivity.getString(R.string.all_null),

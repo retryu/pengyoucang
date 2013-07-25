@@ -158,6 +158,25 @@ public class RegisterFragment extends android.support.v4.app.Fragment implements
 
 	public boolean checkInfo() {
 		if (hePassword.getContent().length() < 8) {
+			Toast.makeText(commonActivity,
+					commonActivity.getString(R.string.alert_password_leng),
+					Toast.LENGTH_SHORT).show();
+			return false;
+		}
+		if (hePassword.getContent().length() > 30) {
+			Toast.makeText(commonActivity,
+					commonActivity.getString(R.string.alert_password_too_long),
+					Toast.LENGTH_SHORT).show();
+			return false;
+		}
+		return true;
+	}
+
+	public boolean checkPhone() {
+		if (heMobile.getContent().length() != 11) {
+			Toast.makeText(commonActivity,
+					commonActivity.getString(R.string.alert_mobile_length),
+					Toast.LENGTH_SHORT).show();
 			return false;
 		}
 		return true;
@@ -196,7 +215,7 @@ public class RegisterFragment extends android.support.v4.app.Fragment implements
 						commonActivity.getString(R.string.alery_mail_err),
 						Toast.LENGTH_SHORT).show();
 				return;
-			}
+			} 
 			if (checkInfo() == false) {
 				Toast.makeText(commonActivity,
 						commonActivity.getString(R.string.alert_password_leng),
@@ -207,6 +226,9 @@ public class RegisterFragment extends android.support.v4.app.Fragment implements
 				Toast.makeText(commonActivity,
 						commonActivity.getString(R.string.alert_password_same),
 						Toast.LENGTH_SHORT).show();
+				return;
+			}
+			if (checkPhone() == false) {
 				return;
 			}
 			showAlert();

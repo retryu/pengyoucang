@@ -60,10 +60,11 @@
     <string name="updataing">正在更新</string>
     <string name="finish_update">更新成功</string>
     <string name="is_loging">正在登录</string>
-    <string name="profile_warm">如果想让你的好有及时知道你变动的号码，修改后请点击更新。</string>
+    <string name="profile_warm">如果想让你的好友及时知道你变动的号码，修改后请点击更新。</string>
     <string name="alert_change">没有任何可更新的内容</string>
     <string name="alert_mobile_length">手机号码长度必需为11位</string>
-    <string name="alert_password_leng">密码不能少于8位</string>
+    <string name="alert_password_leng">密码长度不能少于8位</string>
+    <string name="alert_password_too_long">密码长度不能多于30位</string>
     <string name="alert_password_same">确认密码和密码不一致</string>
     <string name="alery_mail_err">邮箱格式不正确</string>
     <string name="sure_logout">确定需要注销吗？</string>
@@ -79,11 +80,12 @@
     <string name="alert_passwod_null">密碼不能为空</string>
 
     <!-- frined -->
-    <string name="cannot_add_self_friend">不能添加自己为好友</string>
+    <string name="cannot_add_self_friend">不能加自己为好友</string>
 	<string name="must_input_email">必须输入邮箱地址</string>
 	<string name="alerdy_send">已发送</string>
 	<string name="phone_number_too_long">电话号码长度不能多于20位</string>
 	<string name="name_cant_be_null">昵称不能为空</string>
+	<string name="cant_not_found">邮箱不存在</string>
 	
 	<string name="phone_cant_be_null">手机号码不能为空</string>
 	<string name="home_cant_be_null">家庭电话号码不能为空</string>
