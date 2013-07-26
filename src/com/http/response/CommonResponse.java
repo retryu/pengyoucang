@@ -2,7 +2,7 @@ package com.http.response;
 
 /**
  * @author retryu E-mail:ruanchenyugood@gmail.com
- * @version create Time£º2013-6-6 ÏÂÎç02:48:01 file declare:
+ * @version create Timeï¿½ï¿½2013-6-6 ï¿½ï¿½ï¿½ï¿½02:48:01 file declare:
  */
 public class CommonResponse {
 

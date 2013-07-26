@@ -78,19 +78,19 @@ public class OrmDateBaseHelper extends SQLiteOpenHelper {
 		OrmDateBaseHelper.contactDao = contactDao;
 	}
 
-	public  UserDao getUserDao() {
+	public UserDao getUserDao() {
 		return userDao;
 	}
 
-	public   void setUserDao(UserDao userDao) {
+	public void setUserDao(UserDao userDao) {
 		OrmDateBaseHelper.userDao = userDao;
 	}
 
-	public   MsgDao getMsgDao() {
+	public MsgDao getMsgDao() {
 		return msgDao;
 	}
 
-	public   void setMsgDao(MsgDao msgDao) {
+	public void setMsgDao(MsgDao msgDao) {
 		OrmDateBaseHelper.msgDao = msgDao;
 	}
 

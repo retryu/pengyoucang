@@ -19,7 +19,7 @@
     <!-- Message -->
     <string name="friend_list">好友列表</string>
     <string name="frined">好友</string>
-    <string name="frined_info">好友更新</string>
+    <string name="frined_info">好友信息更新</string>
     <string name="upload">上传</string>
     <string name="Download">下载</string>
     <string name="readyDownload">准备下载中</string>
@@ -49,7 +49,8 @@
     <string name="cancel">取消</string>
     <string name="update">更新</string>
     <string name="logout">注销</string>
-    <string name="error">服務器忙,请稍后再試</string>
+    <string name="error">服务器忙,请稍后再試</string>
+    <string  name="error_net">网络连接错误</string>
     <string name="sure_upload">确定上传通讯录到云端？</string>
     <string name="sure_download">确定从云端下载通讯录到本地吗？</string>
     <string name="title_error">错误</string>

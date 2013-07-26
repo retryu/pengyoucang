@@ -143,17 +143,7 @@ public class ContactFragment extends Fragment {
 	}
 
 	public void init() {
-		// new Thread() {
-		// public void run() {
-		// showMessage("正在更新数据");
-		// List<FriendItem> friendItems = getContacts();
-		// Message msg = new Message();
-		// msg.what = MSG_MERGE;
-		// msg.obj = friendItems;
-		// uiHandler.sendMessage(msg);
-		//
-		// };
-		// }.start();
+	 
 
 		new Thread() {
 			public void run() {

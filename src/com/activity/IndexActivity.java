@@ -156,7 +156,6 @@ public class IndexActivity extends CommonActivity implements
 			}
 		});
 		taskButtonDownload.setOnclick(new OnClickListener() {
-
 			@Override
 			public void onClick(View v) {
 				opratAlert = new OpratAlert(activity);
@@ -234,6 +233,14 @@ public class IndexActivity extends CommonActivity implements
 				List<Contact> contacts = contactUtil.query();
 				CommonResponse commonResponse = ContactApi
 						.backUpCpntacts(contacts);
+				if (commonResponse == null) {
+					Message msg = new Message();
+					msg.what = MSG_ALERT;
+					msg.obj = getResources().getString(R.string.error_net);
+					uiHandler.sendMessage(msg);
+					return;
+				}
+
 				if (commonResponse.getStateCode() != HttpUtil.CODE_SUCESS) {
 					Message msgAlert = new Message();
 					msgAlert.what = MSG_ALERT;
@@ -261,8 +268,8 @@ public class IndexActivity extends CommonActivity implements
 			return false;
 		}
 		return true;
-	}
-
+	}   
+  
 	public void download() {
 		if (checkTask() == false) {
 			return;
@@ -274,6 +281,14 @@ public class IndexActivity extends CommonActivity implements
 				super.run();
 				taskButtonDownload.startProcess();
 				CommonResponse response = ContactApi.restoreContacts();
+
+				if (response == null) {
+					Message msg = new Message();
+					msg.what = MSG_ALERT;
+					msg.obj = getResources().getString(R.string.error_net);
+					uiHandler.sendMessage(msg);
+					return;
+				}
 				if (response.getStateCode() == com.http.HttpUtil.CODE_SUCESS) {
 
 					List<Contact> contacts = ContactApi.toContacts(response

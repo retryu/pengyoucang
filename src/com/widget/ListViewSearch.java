@@ -168,13 +168,13 @@ public class ListViewSearch extends ListView {
 					lodingAlert.setContent(getResources().getString(
 							R.string.please_wait));
 				}
-				lodingAlert.show();
+				lodingAlert.show();  
 				break;
 			case MSG_DISMIS:
 				lodingAlert.dismiss();
 				break;
 			}
-
+  
 		}
 	}
 
